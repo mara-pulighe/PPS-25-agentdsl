@@ -38,3 +38,4 @@ Fonte: documentazione ufficiale (Tutorials). Scopo: capire quali concetti modell
 - Se il modello chiede un tool che non esiste, il ciclo si ferma con un errore. Rimandare l'errore al modello lo faccio solo se avanza tempo.
 - Se gli argomenti del tool sono sbagliati, errore esplicito e non crash.
 - Se il modello manda testo insieme alla richiesta di tool, lo conservo in un campo facoltativo. Serve al logging per ricostruire cosa è successo; il ciclo non lo usa.
+- Per i test uso ScalaTest con stile FlatSpec e Matchers (scelta predefinita consigliata dalla documentazione)

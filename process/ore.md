@@ -6,5 +6,6 @@
 | 23/11/2026 | Studio LangChain4j                     | 2   |
 | 24/11/2026 | Studio LangChain4j (Tools)             | 1   |
 | 25/11/2026 |     Lettura pagina Tools, appunti langchain4j, decisioni di design                                   | 3   |
+| 26/11/2026 |      Modello di dominio, decisioni di design, CI con GitHub Actions                                  | 1   |
 | 26/11/2026 |                                        |     |
 | 27/11/2026 |                                        |     |
