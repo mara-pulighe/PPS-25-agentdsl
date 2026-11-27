@@ -37,5 +37,7 @@ Fonte: documentazione ufficiale (Tutorials). Scopo: capire quali concetti modell
 - Il ciclo ha un limite di giri, altrimenti rischia di non fermarsi mai.
 - Se il modello chiede un tool che non esiste, il ciclo si ferma con un errore. Rimandare l'errore al modello lo faccio solo se avanza tempo.
 - Se gli argomenti del tool sono sbagliati, errore esplicito e non crash.
-- Se il modello manda testo insieme alla richiesta di tool, lo conservo in un campo facoltativo. Serve al logging per ricostruire cosa è successo; il ciclo non lo usa.
+- Il testo che alcuni modelli scrivono insieme alla richiesta di tool è solo di passaggio e non serve né al ciclo né al log: lo scarto. Lo riconsidero solo se con l'interprete reale emerge che contiene informazioni utili.
 - Per i test uso ScalaTest con stile FlatSpec e Matchers (scelta predefinita consigliata dalla documentazione)
+- Uso nomi uniformi: il testo si chiama sempre text, in Message come in ModelReply.
+- L'id collega ogni risultato alla sua richiesta, serve quando il modello chiede più tool insieme. È un Option perché non tutti i provider lo mandano.
